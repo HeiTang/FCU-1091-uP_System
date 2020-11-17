@@ -1,0 +1,94 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: £gVision V5.24.2.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: AA AA, AA, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.24.1
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.24.1
+Dialog DLL:      DARMCM1.DLL V1.18.0.0
+Target DLL:      Nu_Link.dll V3.02
+Dialog DLL:      TARMCM1.DLL V1.13.0.0
+ 
+<h2>Project:</h2>
+\\Mac\Home\Desktop\Lab\Lab7.2\KEIL\Nu-LB-NUC140.uvproj
+Project File Date:  11/10/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Sample'
+creating preprocessor file for system_NUC100Series.c...
+assembling startup_NUC100Series.s...
+creating preprocessor file for clk.c...
+creating preprocessor file for spi.c...
+compiling system_NUC100Series.c...
+creating preprocessor file for uart.c...
+compiling clk.c...
+creating preprocessor file for gpio.c...
+compiling spi.c...
+creating preprocessor file for sys.c...
+compiling uart.c...
+creating preprocessor file for timer.c...
+compiling gpio.c...
+compiling sys.c...
+creating preprocessor file for wdt.c...
+compiling timer.c...
+creating preprocessor file for LCD.c...
+creating preprocessor file for main.c...
+compiling wdt.c...
+creating preprocessor file for SYS_init.c...
+compiling LCD.c...
+compiling main.c...
+..\main.c(61): warning:  #223-D: function "CloseSevenSegment" declared implicitly
+          CloseSevenSegment();
+..\main.c(62): warning:  #223-D: function "ShowSevenSegment" declared implicitly
+          ShowSevenSegment(0, digit0);
+..\main.c(66): warning:  #223-D: function "CloseSevenSegment" declared implicitly
+          CloseSevenSegment();
+..\main.c(67): warning:  #223-D: function "ShowSevenSegment" declared implicitly
+          ShowSevenSegment(1, digit1);
+..\main.c(71): warning:  #223-D: function "CloseSevenSegment" declared implicitly
+          CloseSevenSegment();
+..\main.c(72): warning:  #223-D: function "ShowSevenSegment" declared implicitly
+          ShowSevenSegment(2, digit2);
+..\main.c(76): warning:  #223-D: function "CloseSevenSegment" declared implicitly
+          CloseSevenSegment();
+..\main.c(77): warning:  #223-D: function "ShowSevenSegment" declared implicitly
+          ShowSevenSegment(3, digit3);
+..\main.c(147): warning:  #223-D: function "init_LCD" declared implicitly
+    init_LCD();
+..\main.c(149): warning:  #223-D: function "OpenSevenSegment" declared implicitly
+  	OpenSevenSegment();
+..\main.c(150): warning:  #223-D: function "clear_LCD" declared implicitly
+    clear_LCD();
+..\main.c(175): warning:  #223-D: function "print_Line" declared implicitly
+  				print_Line(Line_Count-1, T1);
+..\main.c(140): warning:  #177-D: variable "num"  was declared but never referenced
+    char num[4];
+..\main.c(194): warning:  #1-D: last line of file ends without a newline
+  // FLAG = 1; // stop
+..\main.c: 14 warnings, 0 errors
+creating preprocessor file for Scankey.c...
+compiling SYS_init.c...
+creating preprocessor file for Seven_Segment.c...
+compiling Scankey.c...
+compiling Seven_Segment.c...
+linking...
+Program Size: Code=4556 RO-data=312 RW-data=2096 ZI-data=2048  
+After Build - User command #1: fromelf --bin ".\obj\Sample.axf" --output ".\obj\Sample.bin"
+After Build - User command #2: fromelf --text -c ".\obj\Sample.axf" --output ".\obj\Sample.txt"
+".\obj\Sample.axf" - 0 Error(s), 14 Warning(s).
+Build Time Elapsed:  00:00:05
+</pre>
+</body>
+</html>
