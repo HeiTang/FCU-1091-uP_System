@@ -1,0 +1,268 @@
+Component: ARM Compiler 5.06 update 5 (build 528) Tool: armlink [4d35e2]
+
+==============================================================================
+
+Small function inlining results
+
+Inlined total of 0 calls.
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x0000012d
+
+  Load Region LR_1 (Base: 0x00000000, Size: 0x00002c9c, Max: 0xffffffff, ABSOLUTE)
+
+    Execution Region ER_RO (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x00002c30, Max: 0xffffffff, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x00000000   0x000000c0   Data   RO          114    RESET               startup_nuc100series.o
+    0x000000c0   0x000000c0   0x00000000   Code   RO         2982  * .ARM.Collect$$$$00000000  mc_p.l(entry.o)
+    0x000000c0   0x000000c0   0x00000004   Code   RO         3309    .ARM.Collect$$$$00000001  mc_p.l(entry2.o)
+    0x000000c4   0x000000c4   0x00000004   Code   RO         3312    .ARM.Collect$$$$00000004  mc_p.l(entry5.o)
+    0x000000c8   0x000000c8   0x00000000   Code   RO         3314    .ARM.Collect$$$$00000008  mc_p.l(entry7b.o)
+    0x000000c8   0x000000c8   0x00000000   Code   RO         3316    .ARM.Collect$$$$0000000A  mc_p.l(entry8b.o)
+    0x000000c8   0x000000c8   0x00000008   Code   RO         3317    .ARM.Collect$$$$0000000B  mc_p.l(entry9a.o)
+    0x000000d0   0x000000d0   0x00000000   Code   RO         3319    .ARM.Collect$$$$0000000D  mc_p.l(entry10a.o)
+    0x000000d0   0x000000d0   0x00000000   Code   RO         3321    .ARM.Collect$$$$0000000F  mc_p.l(entry11a.o)
+    0x000000d0   0x000000d0   0x00000004   Code   RO         3310    .ARM.Collect$$$$00002712  mc_p.l(entry2.o)
+    0x000000d4   0x000000d4   0x00000056   Code   RO          621    .emb_text           retarget.o
+    0x0000012a   0x0000012a   0x00000002   PAD
+    0x0000012c   0x0000012c   0x0000004c   Code   RO          115  * .text               startup_nuc100series.o
+    0x00000178   0x00000178   0x0000002c   Code   RO         2983    .text               mc_p.l(uidiv.o)
+    0x000001a4   0x000001a4   0x00000164   Code   RO         3280    .text               mf_p.l(dadd.o)
+    0x00000308   0x00000308   0x000000d0   Code   RO         3282    .text               mf_p.l(dmul.o)
+    0x000003d8   0x000003d8   0x000000f0   Code   RO         3284    .text               mf_p.l(ddiv.o)
+    0x000004c8   0x000004c8   0x00000028   Code   RO         3286    .text               mf_p.l(dflti.o)
+    0x000004f0   0x000004f0   0x00000038   Code   RO         3288    .text               mf_p.l(d2f.o)
+    0x00000528   0x00000528   0x00000060   Code   RO         3323    .text               mc_p.l(uldiv.o)
+    0x00000588   0x00000588   0x00000020   Code   RO         3325    .text               mc_p.l(llshl.o)
+    0x000005a8   0x000005a8   0x00000026   Code   RO         3327    .text               mc_p.l(llsshr.o)
+    0x000005ce   0x000005ce   0x00000000   Code   RO         3342    .text               mc_p.l(iusefp.o)
+    0x000005ce   0x000005ce   0x00000082   Code   RO         3343    .text               mf_p.l(fepilogue.o)
+    0x00000650   0x00000650   0x000000be   Code   RO         3345    .text               mf_p.l(depilogue.o)
+    0x0000070e   0x0000070e   0x0000002c   Code   RO         3349    .text               mf_p.l(dscalb.o)
+    0x0000073a   0x0000073a   0x000000a2   Code   RO         3351    .text               mf_p.l(dsqrt.o)
+    0x000007dc   0x000007dc   0x00000028   Code   RO         3357    .text               mf_p.l(cdrcmple.o)
+    0x00000804   0x00000804   0x00000024   Code   RO         3359    .text               mc_p.l(init.o)
+    0x00000828   0x00000828   0x00000022   Code   RO         3361    .text               mc_p.l(llushr.o)
+    0x0000084a   0x0000084a   0x00000002   PAD
+    0x0000084c   0x0000084c   0x00000030   Code   RO          208    i.CLK_EnableModuleClock  clk.o
+    0x0000087c   0x0000087c   0x00000198   Code   RO          209    i.CLK_EnablePLL     clk.o
+    0x00000a14   0x00000a14   0x00000010   Code   RO          211    i.CLK_EnableXtalRC  clk.o
+    0x00000a24   0x00000a24   0x00000010   Code   RO          213    i.CLK_GetHCLKFreq   clk.o
+    0x00000a34   0x00000a34   0x00000058   Code   RO          509    i.CLK_GetPLLClockFreq  spi.o
+    0x00000a8c   0x00000a8c   0x00000078   Code   RO          219    i.CLK_SetCoreClock  clk.o
+    0x00000b04   0x00000b04   0x00000048   Code   RO          220    i.CLK_SetHCLK       clk.o
+    0x00000b4c   0x00000b4c   0x000000cc   Code   RO          221    i.CLK_SetModuleClock  clk.o
+    0x00000c18   0x00000c18   0x0000002c   Code   RO          223    i.CLK_WaitClockReady  clk.o
+    0x00000c44   0x00000c44   0x00000028   Code   RO          623    i.Hard_Fault_Handler  retarget.o
+    0x00000c6c   0x00000c6c   0x0000000a   Code   RO          875    i.I2C0_IRQHandler   nvt_i2c.o
+    0x00000c76   0x00000c76   0x0000000a   Code   RO          876    i.I2C1_IRQHandler   nvt_i2c.o
+    0x00000c80   0x00000c80   0x00000070   Code   RO          877    i.I2CX_IRQHandler   nvt_i2c.o
+    0x00000cf0   0x00000cf0   0x00000104   Code   RO          879    i.I2C_Callback_Rx_Continue  nvt_i2c.o
+    0x00000df4   0x00000df4   0x000000a0   Code   RO          881    i.I2C_Callback_Tx_Continue  nvt_i2c.o
+    0x00000e94   0x00000e94   0x0000000a   Code   RO          381    i.I2C_ClearTimeoutFlag  i2c.o
+    0x00000e9e   0x00000e9e   0x00000030   Code   RO          383    i.I2C_Ctrl          i2c.o
+    0x00000ece   0x00000ece   0x0000000a   Code   RO          385    i.I2C_DisableTimeout  i2c.o
+    0x00000ed8   0x00000ed8   0x0000000a   Code   RO          387    i.I2C_EnableInt     i2c.o
+    0x00000ee2   0x00000ee2   0x0000001a   Code   RO          388    i.I2C_EnableTimeout  i2c.o
+    0x00000efc   0x00000efc   0x00000006   Code   RO          391    i.I2C_GetData       i2c.o
+    0x00000f02   0x00000f02   0x00000002   PAD
+    0x00000f04   0x00000f04   0x00000038   Code   RO          394    i.I2C_Open          i2c.o
+    0x00000f3c   0x00000f3c   0x00000004   Code   RO          396    i.I2C_SetData       i2c.o
+    0x00000f40   0x00000f40   0x00000018   Code   RO         2806    i.I2Cdev_readByte   i2cdev.o
+    0x00000f58   0x00000f58   0x00000022   Code   RO         2807    i.I2Cdev_readBytes  i2cdev.o
+    0x00000f7a   0x00000f7a   0x00000032   Code   RO         2810    i.I2Cdev_writeBit   i2cdev.o
+    0x00000fac   0x00000fac   0x00000042   Code   RO         2812    i.I2Cdev_writeBits  i2cdev.o
+    0x00000fee   0x00000fee   0x0000000c   Code   RO         2814    i.I2Cdev_writeByte  i2cdev.o
+    0x00000ffa   0x00000ffa   0x0000001a   Code   RO         2815    i.I2Cdev_writeBytes  i2cdev.o
+    0x00001014   0x00001014   0x0000000c   Code   RO         1224    i.MPU6050_address   mpu6050.o
+    0x00001020   0x00001020   0x00000048   Code   RO         1229    i.MPU6050_getAcceleration  mpu6050.o
+    0x00001068   0x00001068   0x0000001c   Code   RO         1367    i.MPU6050_initialize  mpu6050.o
+    0x00001084   0x00001084   0x00000018   Code   RO         1385    i.MPU6050_setClockSource  mpu6050.o
+    0x0000109c   0x0000109c   0x00000018   Code   RO         1401    i.MPU6050_setFullScaleAccelRange  mpu6050.o
+    0x000010b4   0x000010b4   0x00000018   Code   RO         1402    i.MPU6050_setFullScaleGyroRange  mpu6050.o
+    0x000010cc   0x000010cc   0x00000018   Code   RO         1448    i.MPU6050_setSleepEnabled  mpu6050.o
+    0x000010e4   0x000010e4   0x00000024   Code   RO          882    i.NVT_I2C_Init      nvt_i2c.o
+    0x00001108   0x00001108   0x00000064   Code   RO          885    i.NVT_ReadByteContinue_addr8  nvt_i2c.o
+    0x0000116c   0x0000116c   0x00000010   Code   RO          887    i.NVT_SetDeviceAddress  nvt_i2c.o
+    0x0000117c   0x0000117c   0x0000005c   Code   RO          890    i.NVT_WriteByteContinue_addr8  nvt_i2c.o
+    0x000011d8   0x000011d8   0x0000000a   Code   RO          514    i.SPI_DisableAutoSS  spi.o
+    0x000011e2   0x000011e2   0x00000002   PAD
+    0x000011e4   0x000011e4   0x0000016c   Code   RO          523    i.SPI_Open          spi.o
+    0x00001350   0x00001350   0x00000098   Code   RO          846    i.SYS_Init          sys_init.o
+    0x000013e8   0x000013e8   0x00000038   Code   RO          625    i.SendChar          retarget.o
+    0x00001420   0x00001420   0x00000090   Code   RO            3    i.SystemCoreClockUpdate  system_nuc100series.o
+    0x000014b0   0x000014b0   0x00000002   Code   RO            4    i.SystemInit        system_nuc100series.o
+    0x000014b2   0x000014b2   0x00000002   PAD
+    0x000014b4   0x000014b4   0x00000030   Code   RO          893    i.WaitEndFlag0      nvt_i2c.o
+    0x000014e4   0x000014e4   0x00000020   Code   RO         3122    i.__0printf$5       mc_p.l(printf5.o)
+    0x00001504   0x00001504   0x0000002e   Code   RO         3347    i.__ARM_clz         mf_p.l(depilogue.o)
+    0x00001532   0x00001532   0x00000002   PAD
+    0x00001534   0x00001534   0x0000002c   Code   RO         3304    i.__ARM_fpclassify  m_ps.l(fpclassify.o)
+    0x00001560   0x00001560   0x000000ac   Code   RO         3306    i.__kernel_poly     m_ps.l(poly.o)
+    0x0000160c   0x0000160c   0x00000014   Code   RO         3290    i.__mathlib_dbl_divzero  m_ps.l(dunder.o)
+    0x00001620   0x00001620   0x0000000a   Code   RO         3291    i.__mathlib_dbl_infnan  m_ps.l(dunder.o)
+    0x0000162a   0x0000162a   0x00000008   Code   RO         3292    i.__mathlib_dbl_infnan2  m_ps.l(dunder.o)
+    0x00001632   0x00001632   0x00000010   Code   RO         3293    i.__mathlib_dbl_invalid  m_ps.l(dunder.o)
+    0x00001642   0x00001642   0x00000002   PAD
+    0x00001644   0x00001644   0x00000014   Code   RO         3294    i.__mathlib_dbl_overflow  m_ps.l(dunder.o)
+    0x00001658   0x00001658   0x00000014   Code   RO         3296    i.__mathlib_dbl_underflow  m_ps.l(dunder.o)
+    0x0000166c   0x0000166c   0x0000000e   Code   RO         3365    i.__scatterload_copy  mc_p.l(handlers.o)
+    0x0000167a   0x0000167a   0x00000002   Code   RO         3366    i.__scatterload_null  mc_p.l(handlers.o)
+    0x0000167c   0x0000167c   0x0000000e   Code   RO         3367    i.__scatterload_zeroinit  mc_p.l(handlers.o)
+    0x0000168a   0x0000168a   0x00000002   PAD
+    0x0000168c   0x0000168c   0x0000000c   Code   RO         3337    i.__set_errno       mc_p.l(errno.o)
+    0x00001698   0x00001698   0x000002dc   Code   RO         3129    i._printf_core      mc_p.l(printf5.o)
+    0x00001974   0x00001974   0x0000021c   Code   RO         2955    i.atan              m_ps.l(atan.o)
+    0x00001b90   0x00001b90   0x00000054   Code   RO         1030    i.clear_LCD         lcd.o
+    0x00001be4   0x00001be4   0x00000066   Code   RO         1032    i.draw_Bmp16x16     lcd.o
+    0x00001c4a   0x00001c4a   0x00000002   PAD
+    0x00001c4c   0x00001c4c   0x00000048   Code   RO         1048    i.draw_Pixel        lcd.o
+    0x00001c94   0x00001c94   0x0000000c   Code   RO          631    i.fputc             retarget.o
+    0x00001ca0   0x00001ca0   0x00000026   Code   RO         1049    i.init_LCD          lcd.o
+    0x00001cc6   0x00001cc6   0x00000002   PAD
+    0x00001cc8   0x00001cc8   0x00000024   Code   RO         1050    i.init_SPI3         lcd.o
+    0x00001cec   0x00001cec   0x00000070   Code   RO         1051    i.lcdSetAddr        lcd.o
+    0x00001d5c   0x00001d5c   0x00000028   Code   RO         1052    i.lcdWriteCommand   lcd.o
+    0x00001d84   0x00001d84   0x0000002c   Code   RO         1053    i.lcdWriteData      lcd.o
+    0x00001db0   0x00001db0   0x00000214   Code   RO          741    i.main              main.o
+    0x00001fc4   0x00001fc4   0x000009fc   Code   RO         2965    i.pow               m_ps.l(pow.o)
+    0x000029c0   0x000029c0   0x00000048   Code   RO         2975    i.sqrt              m_ps.l(sqrt.o)
+    0x00002a08   0x00002a08   0x000000a8   Code   RO          633    i.stackDump         retarget.o
+    0x00002ab0   0x00002ab0   0x00000038   Data   RO          224    .constdata          clk.o
+    0x00002ae8   0x00002ae8   0x00000098   Data   RO         2956    .constdata          m_ps.l(atan.o)
+    0x00002b80   0x00002b80   0x00000088   Data   RO         2966    .constdata          m_ps.l(pow.o)
+    0x00002c08   0x00002c08   0x00000008   Data   RO         3308    .constdata          m_ps.l(qnan.o)
+    0x00002c10   0x00002c10   0x00000020   Data   RO         3363    Region$$Table       anon$$obj.o
+
+
+    Execution Region ER_RW (Exec base: 0x20000000, Load base: 0x00002c30, Size: 0x0000006c, Max: 0xffffffff, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   0x00002c30   0x0000002c   Data   RW            5    .data               system_nuc100series.o
+    0x2000002c   0x00002c5c   0x00000001   Data   RW          635    .data               retarget.o
+    0x2000002d   0x00002c5d   0x00000003   PAD
+    0x20000030   0x00002c60   0x00000004   Data   RW          636    .data               retarget.o
+    0x20000034   0x00002c64   0x00000020   Data   RW          743    .data               main.o
+    0x20000054   0x00002c84   0x00000010   Data   RW          896    .data               nvt_i2c.o
+    0x20000064   0x00002c94   0x00000001   Data   RW         1485    .data               mpu6050.o
+    0x20000065   0x00002c95   0x00000003   PAD
+    0x20000068   0x00002c98   0x00000004   Data   RW         3338    .data               mc_p.l(errno.o)
+
+
+    Execution Region ER_ZI (Exec base: 0x2000006c, Load base: 0x00002c9c, Size: 0x000009b4, Max: 0xffffffff, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x2000006c        -       0x00000010   Zero   RW          634    .bss                retarget.o
+    0x2000007c        -       0x00000190   Zero   RW          895    .bss                nvt_i2c.o
+    0x2000020c        -       0x00000400   Zero   RW         1059    .bss                lcd.o
+    0x2000060c        -       0x0000000e   Zero   RW         1484    .bss                mpu6050.o
+    0x2000061a   0x00002c9c   0x00000006   PAD
+    0x20000620        -       0x00000400   Zero   RW          112    STACK               startup_nuc100series.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+       928        126         56          0          0       7016   clk.o
+       170          6          0          0          0       5130   i2c.o
+       212          0          0          0          0       5677   i2cdev.o
+       528         34          0          0       1024       7123   lcd.o
+       532         46          0         32          0      21472   main.o
+       208         34          0          1         14       5380   mpu6050.o
+       844        158          0         16        400      14226   nvt_i2c.o
+       362        140          0          5         16      97113   retarget.o
+       462         34          0          0          0       3127   spi.o
+        76         32        192          0       1024        776   startup_nuc100series.o
+       152         18          0          0          0      35211   sys_init.o
+       146         26          0         44          0     118331   system_nuc100series.o
+
+    ----------------------------------------------------------------------
+      4632        654        280        104       2484     320582   Object Totals
+         0          0         32          0          0          0   (incl. Generated)
+        12          0          0          6          6          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+       540         68        152          0          0        112   atan.o
+        94         14          0          0          0        408   dunder.o
+        44          4          0          0          0         60   fpclassify.o
+       172          0          0          0          0         76   poly.o
+      2556        196        136          0          0        240   pow.o
+         0          0          8          0          0          0   qnan.o
+        72          6          0          0          0         76   sqrt.o
+         0          0          0          0          0          0   entry.o
+         0          0          0          0          0          0   entry10a.o
+         0          0          0          0          0          0   entry11a.o
+         8          4          0          0          0          0   entry2.o
+         4          0          0          0          0          0   entry5.o
+         0          0          0          0          0          0   entry7b.o
+         0          0          0          0          0          0   entry8b.o
+         8          4          0          0          0          0   entry9a.o
+        12          6          0          4          0         60   errno.o
+        30          0          0          0          0          0   handlers.o
+        36          8          0          0          0         68   init.o
+         0          0          0          0          0          0   iusefp.o
+        32          0          0          0          0         68   llshl.o
+        38          0          0          0          0         68   llsshr.o
+        34          0          0          0          0         68   llushr.o
+       764         52          0          0          0        168   printf5.o
+        44          0          0          0          0         72   uidiv.o
+        96          0          0          0          0         84   uldiv.o
+        40          2          0          0          0         68   cdrcmple.o
+        56          0          0          0          0         68   d2f.o
+       356          4          0          0          0        140   dadd.o
+       240          6          0          0          0         84   ddiv.o
+       236          0          0          0          0        216   depilogue.o
+        40          6          0          0          0         68   dflti.o
+       208          6          0          0          0         88   dmul.o
+        44          0          0          0          0         72   dscalb.o
+       162          0          0          0          0         80   dsqrt.o
+       130          0          0          0          0        144   fepilogue.o
+
+    ----------------------------------------------------------------------
+      6104        386        296          4          0       2656   Library Totals
+         8          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+      3478        288        296          0          0        972   m_ps.l
+      1106         74          0          4          0        656   mc_p.l
+      1512         24          0          0          0       1028   mf_p.l
+
+    ----------------------------------------------------------------------
+      6104        386        296          4          0       2656   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+     10736       1040        576        108       2484     319634   Grand Totals
+     10736       1040        576        108       2484     319634   ELF Image Totals
+     10736       1040        576        108          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                11312 (  11.05kB)
+    Total RW  Size (RW Data + ZI Data)              2592 (   2.53kB)
+    Total ROM Size (Code + RO Data + RW Data)      11420 (  11.15kB)
+
+==============================================================================
+
