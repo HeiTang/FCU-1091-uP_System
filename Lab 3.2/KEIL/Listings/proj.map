@@ -853,18 +853,18 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-       660         90          0          0          0       4409   clk.o
-        40          0          0          0          0        927   gpio.o
-      1304         40          0        100          0       3994   main.o
-       412        152          0          5         16       5870   retarget.o
-       184         12          0          0          0       1147   scankey.o
-       386         46          0         16          0       2892   seven_segment.o
-       100         46        192          0       1024        700   startup_nuc100series.o
-        56          8          0          0          0      34963   sys_init.o
-       146         26          0         44          0     117823   system_nuc100series.o
+       660         90          0          0          0       4505   clk.o
+        40          0          0          0          0        963   gpio.o
+      1304         40          0        100          0       4098   main.o
+       412        152          0          5         16       6034   retarget.o
+       184         12          0          0          0       1179   scankey.o
+       386         46          0         16          0       2972   seven_segment.o
+       100         46        192          0       1024        716   startup_nuc100series.o
+        56          8          0          0          0      34995   sys_init.o
+       146         26          0         44          0     117927   system_nuc100series.o
 
     ----------------------------------------------------------------------
-      3292        420        224        168       1040     172725   Object Totals
+      3292        420        224        168       1040     173389   Object Totals
          0          0         32          0          0          0   (incl. Generated)
          4          0          0          3          0          0   (incl. Padding)
 
@@ -920,8 +920,8 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      4580        454        264        168       1136     172397   Grand Totals
-      4580        454        264        168       1136     172397   ELF Image Totals
+      4580        454        264        168       1136     173061   Grand Totals
+      4580        454        264        168       1136     173061   ELF Image Totals
       4580        454        264        168          0          0   ROM Totals
 
 ==============================================================================
