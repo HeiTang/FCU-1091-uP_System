@@ -1,5 +1,0 @@
--c --cpu Cortex-M0 -D__EVAL -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\..\..\..\Library\CMSIS\Include -I ..\..\..\..\Library\Device\Nuvoton\NUC100Series\Include -I ..\..\..\..\Library\StdDriver\inc -I ..\..\..\..\Library\Nu-LB-NUC140\Include -I ..\..\..\..\Library\NuMakerLib\Include -I ..\
--IC:\Keil_v5\ARM\RV31\INC
--IC:\Keil_v5\ARM\CMSIS\Include
--D__UVISION_VERSION="524" -DDEBUG_ENABLE_SEMIHOST
--o .\obj\i2c.o --list_dir ".\\lst\\" --list --omf_browse .\obj\i2c.crf --depend .\obj\i2c.d --feedback ".\obj\I2C_IMU.fed" "..\..\..\..\Library\StdDriver\src\i2c.c"
