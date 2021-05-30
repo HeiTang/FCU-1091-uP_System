@@ -4,4 +4,5 @@
 1. [MDK-ARM Version 5.24a](https://www.keil.com/update/sw/mdk/5.24a)
 2. Nu-Link Keil Driver(In Keil Environments File)
 
-## Lab
+## Note
+- https://hackmd.io/@heitang512/keil
